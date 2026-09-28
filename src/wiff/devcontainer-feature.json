@@ -1,0 +1,19 @@
+{
+    "description": "Builds wiff, a Rust code review tool, from a pinned commit of the sdwilsh/wiff fork, which carries the Jujutsu backend upstream lacks. A temporary Rust toolchain does the build and is removed afterward.",
+    "documentationURL": "https://github.com/sdwilsh/devcontainer-features/tree/main/src/wiff",
+    "id": "wiff",
+    "name": "wiff",
+    "options": {
+        "ref": {
+            "default": "39c3e3e8299f498ee6abf9e01cc1b9387995e9f2",
+            "description": "Commit sha to build wiff from. Pinned to the fork's main HEAD at the time this Feature was written. Move it by hand; nothing bumps it automatically.",
+            "type": "string"
+        },
+        "repo": {
+            "default": "https://github.com/sdwilsh/wiff.git",
+            "description": "Git URL to clone wiff from.",
+            "type": "string"
+        }
+    },
+    "version": "1.0.0"
+}

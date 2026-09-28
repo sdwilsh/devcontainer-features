@@ -1,0 +1,10 @@
+{
+    "fedora": {
+        "features": {
+            "jj": {},
+            "wiff": {}
+        },
+        "image": "ghcr.io/marinatedconcrete/devcontainer-base:latest",
+        "remoteUser": "vscode"
+    }
+}
