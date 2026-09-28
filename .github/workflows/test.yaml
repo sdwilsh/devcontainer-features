@@ -36,6 +36,7 @@ jobs:
         features:
           - color
           - hello
+          - jj
           - sshd
           - yq
     steps:

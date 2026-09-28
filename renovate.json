@@ -2,6 +2,20 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "customManagers": [
     {
+      "autoReplaceStringTemplate": "\"sha256\": {\n            \"default\": \"{{{newDigest}}}\",\n            \"description\": \"sha256 of the jj-v<version>-x86_64-unknown-linux-musl.tar.gz asset for the given version. Must be updated together with version.\",\n            \"type\": \"string\"\n        },\n        \"version\": {\n            \"default\": \"{{{replace \"^v\" \"\" newValue}}}\"",
+      "currentValueTemplate": "v{{{rawVersion}}}",
+      "customType": "regex",
+      "datasourceTemplate": "github-release-attachments",
+      "depNameTemplate": "jj-vcs/jj",
+      "description": "The `github-release-attachments` datasource computes the checksum of the jj-v<version>-x86_64-unknown-linux-musl.tar.gz release asset. The GitHub tag carries a leading `v`; the option default does not. `currentValueTemplate` adds it back for the lookup, and the `replace` helper strips it again on write.",
+      "managerFilePatterns": [
+        "/^src/jj/devcontainer-feature\\.json$/"
+      ],
+      "matchStrings": [
+        "\"sha256\": \\{\\s*\"default\": \"(?<currentDigest>[a-f0-9]{64})\",\\s*\"description\": \"[^\"]*\",\\s*\"type\": \"string\"\\s*\\},\\s*\"version\": \\{\\s*\"default\": \"(?<rawVersion>\\d+\\.\\d+\\.\\d+)\""
+      ]
+    },
+    {
       "customType": "regex",
       "datasourceTemplate": "github-release-attachments",
       "depNameTemplate": "mikefarah/yq",

@@ -1,0 +1,19 @@
+{
+    "description": "Installs the jj-vcs/jj Jujutsu VCS from a sha256-pinned tarball release. No package manager is used, so it works on any distro with curl and tar.",
+    "documentationURL": "https://github.com/sdwilsh/devcontainer-features/tree/main/src/jj",
+    "id": "jj",
+    "name": "jj",
+    "options": {
+        "sha256": {
+            "default": "f35438350b5d61963aac5dd74ede510b31d6b9690769d1a6268cf058cc825f72",
+            "description": "sha256 of the jj-v<version>-x86_64-unknown-linux-musl.tar.gz asset for the given version. Must be updated together with version.",
+            "type": "string"
+        },
+        "version": {
+            "default": "0.45.1",
+            "description": "jj version to install, without a leading 'v'.",
+            "type": "string"
+        }
+    },
+    "version": "1.0.0"
+}

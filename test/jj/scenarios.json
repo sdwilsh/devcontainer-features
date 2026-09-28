@@ -1,0 +1,18 @@
+{
+    "fedora": {
+        "features": {
+            "jj": {}
+        },
+        "image": "ghcr.io/marinatedconcrete/devcontainer-base:latest",
+        "remoteUser": "vscode"
+    },
+    "pinned_version": {
+        "features": {
+            "jj": {
+                "sha256": "0a07bab4641a55fd2bc2fd1563ba3a3f9a577584086ad74086a1c5b69b3ffce9",
+                "version": "0.44.0"
+            }
+        },
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
+    }
+}
