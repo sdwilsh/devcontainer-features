@@ -36,6 +36,7 @@ jobs:
         features:
           - color
           - hello
+          - sshd
     steps:
       - uses: actions/checkout@v4
 

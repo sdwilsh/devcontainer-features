@@ -1,0 +1,36 @@
+{
+    "fedora": {
+        "features": {
+            "sshd": {}
+        },
+        "image": "fedora:latest",
+        "remoteUser": "root"
+    },
+    "gateway_ports": {
+        "features": {
+            "sshd": {
+                "gatewayPorts": "yes"
+            }
+        },
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "remoteUser": "root"
+    },
+    "sshd_with_default_gateway_ports": {
+        "features": {
+            "sshd": {
+                "gatewayPorts": "no"
+            }
+        },
+        "image": "ubuntu:noble",
+        "remoteUser": "root"
+    },
+    "sshd_with_pinned_gateway_ports_clientspecified": {
+        "features": {
+            "sshd": {
+                "gatewayPorts": "clientspecified"
+            }
+        },
+        "image": "ubuntu:noble",
+        "remoteUser": "root"
+    }
+}
