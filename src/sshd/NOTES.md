@@ -1,23 +1,3 @@
-
-# SSH server (sshd)
-
-Adds a SSH server into a container so that you can use an external terminal, sftp, or SSHFS to interact with it. Fork of the upstream sshd feature with Fedora/RHEL (dnf/yum) support added.
-
-## Example Usage
-
-```json
-"features": {
-    "ghcr.io/sdwilsh/devcontainer-features/sshd:1": {}
-}
-```
-
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| version | Currently unused. | string | latest |
-| gatewayPorts | Enable other hosts in the same network to connect to the forwarded ports | string | no |
-
 ## Usage
 
 While some services automate SSH setup (e.g., when using the GitHub CLI for GitHub Codespaces), this may not be the case for other tools and services. Follow these directions to connect to the dev container from these other tools:
@@ -68,8 +48,3 @@ While some services automate SSH setup (e.g., when using the GitHub CLI for GitH
 This Feature works on Debian/Ubuntu-based distributions with `apt`, and on Fedora/RHEL-based distributions with `dnf` or `yum`.
 
 `bash` is required to execute the `install.sh` script.
-
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/sdwilsh/devcontainer-features/blob/main/src/sshd/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
