@@ -37,6 +37,7 @@ jobs:
           - color
           - hello
           - sshd
+          - yq
     steps:
       - uses: actions/checkout@v4
 

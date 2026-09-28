@@ -1,0 +1,19 @@
+{
+    "description": "Installs the mikefarah/yq YAML processor from a sha256-pinned binary release. No package manager is used, so it works on any distro with curl.",
+    "documentationURL": "https://github.com/sdwilsh/devcontainer-features/tree/main/src/yq",
+    "id": "yq",
+    "name": "yq",
+    "options": {
+        "sha256": {
+            "default": "c5f056448f973ae7d39b5401949648a78f2dc1947d6a8eb65be60d5c504b9385",
+            "description": "sha256 of the yq_linux_amd64 asset for the given version. Must be updated together with version.",
+            "type": "string"
+        },
+        "version": {
+            "default": "4.53.6",
+            "description": "yq version to install, without a leading 'v'.",
+            "type": "string"
+        }
+    },
+    "version": "1.0.0"
+}
