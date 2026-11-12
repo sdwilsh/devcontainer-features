@@ -5,12 +5,12 @@
     "name": "yq",
     "options": {
         "sha256": {
-            "default": "8e34fc298390875de416e6a4afcb8cabeceb25d9aa8506c1a2f9353cf702ea5f",
+            "default": "129534601871538efe0ba4c5e62a34fb1d5f469bcb975c4fddeb467d82974973",
             "description": "sha256 of the yq_linux_amd64 asset for the given version. Must be updated together with version.",
             "type": "string"
         },
         "version": {
-            "default": "4.54.1",
+            "default": "4.54.3",
             "description": "yq version to install, without a leading 'v'.",
             "type": "string"
         }
